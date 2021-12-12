@@ -1,4 +1,4 @@
-const elHamburger = document.querySelector ('.header__menu-button')
+const elHamburger = document.querySelector ('.hamburger')
 const elHeader = document.querySelector ('.header')
 
 elHamburger .addEventListener('click', () => {
