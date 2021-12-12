@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.min.css" />
-    <title>PAYAPI</title>
+    <title>PayAPI</title>
   </head>
   <body>
     <!-- Header -->
@@ -67,6 +67,57 @@
         </div>
       </div>
     </header>
+
+    <!-- Main -->
+
+    <main class="main">
+      <!-- Hero -->
+
+      <section class="hero">
+        <div class="container">
+          <div class="hero__inner">
+            <h1 class="hero__heading">
+              Start building with our APIs for absolutely free.
+            </h1>
+
+            <!-- Form -->
+
+            <form
+              class="form"
+              action="https://echo.htmlacademy.ru/"
+              method="post"
+            >
+              <label class="form___label" id="email">
+                <input
+                  class="form__input"
+                  type="email"
+                  name="email"
+                  placeholder="Enter email address"
+                  required
+                />
+              </label>
+
+              <button class="form__button" type="submit">
+                Schedule a Demo
+              </button>
+            </form>
+
+            <p class="hero__text">
+              Have any questions?
+              <a class="hero__link" href="#">Contact Us</a>
+            </p>
+          </div>
+
+          <img
+            class="hero__image"
+            src="./images/hero-phone.svg"
+            alt="The payment has been processed. The total amount deducted from your account is US $104.90."
+            width="263"
+            height="500"
+          />
+        </div>
+      </section>
+    </main>
 
     <script src="./js/main.js"></script>
   </body>
