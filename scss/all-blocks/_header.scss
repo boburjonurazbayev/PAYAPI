@@ -9,3 +9,15 @@
 .header__logo {
   margin-right: 64px;
 }
+
+@media only screen and (max-width: 768px) {
+    .header .container {
+        padding: 0 40px;
+    }
+}
+
+@media only screen and (max-width: 701px) {
+    .header .container {
+        padding: 0 24px;
+    }
+}
