@@ -20,6 +20,8 @@
 
 .form {
   position: relative;
+  max-width: 445px;
+  width: 100%;
   margin-bottom: 15px;
 }
 
@@ -28,7 +30,6 @@
 }
 
 .form__input {
-  max-width: 445px;
   width: 100%;
   height: 48px;
   padding: 15px 25px;
@@ -52,7 +53,7 @@
   @include button;
   position: absolute;
   top: 0;
-  right: 100px;
+  right: 0;
 
   &:active {
     border: none;
@@ -89,18 +90,21 @@
   .hero__inner {
     align-items: center;
     max-width: 575px;
+    width: 100%;
     margin-right: 0;
   }
 
   .hero__heading {
     @include heading;
-    max-width: 575px;
     margin-bottom: 20px;
     text-align: center;
   }
-
+  .form {
+    max-width: 445px;
+    width: 100%;
+  }
   .form__input {
-    padding-right: 275px;
+    display: block;
   }
 
   .form__button {
@@ -123,7 +127,7 @@
 @media only screen and (max-width: 537px) {
   .hero__inner {
     max-width: 370px;
-    padding: 0 10px;
+    width: 100%;
   }
 
   .hero__heading {
@@ -132,20 +136,20 @@
   }
 
   .form {
-    margin-bottom: 24px;
     flex-direction: column;
+    max-width: 327px;
+    width: 100%;
+    margin-bottom: 24px;
   }
 
   .form__input {
-    max-width: 327px;
     margin-bottom: 15px;
-    padding-right: 160px;
   }
 
   .form__button {
     position: relative;
     max-width: 327px;
-    margin-bottom: 24px;
+    width: 100%;
   }
 }
 

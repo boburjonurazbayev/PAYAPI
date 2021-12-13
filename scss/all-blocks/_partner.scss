@@ -87,11 +87,20 @@
   justify-content: space-between;
   max-width: 535px;
   width: 100%;
-  margin-bottom: -40px;
 }
 
 .partner__item {
-  margin-bottom: 40px;
+  &:nth-child(1) {
+    margin-bottom: 40px;
+  }
+
+  &:nth-child(2) {
+    margin-bottom: 40px;
+  }
+
+  &:nth-child(3) {
+    margin-bottom: 40px;
+  }
 }
 
 @media only screen and (max-width: 925px) {
@@ -133,7 +142,7 @@
   }
 
   .partner__list {
-    margin-bottom: 24px;
+    margin-bottom: 64px;
   }
 }
 
@@ -170,6 +179,11 @@
 
   .partner__list {
     max-width: 280px;
+    margin-bottom: 56px;
+  }
+
+  .partner__item:nth-child(4) {
+    margin-bottom: 40px;
   }
 
   .partner__logo {
