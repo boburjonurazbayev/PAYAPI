@@ -1,0 +1,151 @@
+.ui-ux {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+.ui-ux .container {
+  padding: 140px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 390px;
+    height: 780px;
+    background-image: url(../images/ui-ux-circle.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+  }
+}
+
+.ui-ux__inner {
+  max-width: 445px;
+  width: 100%;
+  margin-right: 20px;
+}
+
+.ui-ux__heading {
+  @include heading;
+  margin-bottom: 24px;
+}
+
+.ui-ux__text {
+  margin: 0;
+  color: $main-text-color;
+}
+
+.ui-ux__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 566px;
+  width: 100%;
+}
+
+.ui-ux__image {
+    border-radius: 35px;
+
+  & + & {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 1021px) {
+    .ui-ux {
+        margin: 0;
+    }
+
+    .ui-ux .container {
+        flex-direction: column-reverse;
+        margin: 100px 0;
+        padding: 0 20px;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    .ui-ux__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 573px;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .ui-ux__heading {
+        text-align: center;
+    }
+
+    .ui-ux__text {
+        text-align: center;
+    }
+
+    .ui-ux__info {
+        max-width: 370px;
+        margin-bottom: 50px;
+    }
+
+    .ui-ux__image {
+        width: 170px;
+        height: 320px;
+        border-radius: 20px;
+
+        & + & {
+            margin-left: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 596px) {
+    .ui-ux .container {
+        margin: 80px 0;
+    }
+
+    .ui-ux__inner {
+        max-width: 328px;
+        width: 100%;
+    }    
+
+    .ui-ux__heading {
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: -0.28px;
+    }
+
+    .ui-ux__info {
+        max-width: 330px;
+        width: 100%;
+    }
+
+    .ui-ux__image {
+        width: 152px;
+        height: 290px;
+
+        & + & {
+            margin-left: 25px;
+        }
+    }
+}
+
+@media only screen and (max-width: 369px) {
+    .ui-ux__info {
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .ui-ux__image {
+        & + & {
+            margin-left: 0;
+            margin-top: 20px;
+        }
+    }
+}
